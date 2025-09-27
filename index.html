@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive Page</h1>
+  </header>
+
+  <!-- Interactive Section 1: Button click -->
+  <section id="interactive1">
+    <h2>Click the Button</h2>
+    <button id="colorBtn">Change Background Color</button>
+  </section>
+
+  <!-- Interactive Section 2: Slider -->
+  <section id="interactive2">
+    <h2>Adjust the Slider</h2>
+    <input type="range" id="sizeSlider" min="10" max="50" value="20">
+    <p>Font size: <span id="fontSizeValue">20</span>px</p>
+    <p id="textToResize">This text will change size based on the slider.</p>
+  </section>
+
+  <!-- Custom Form Section -->
+  <section id="formSection">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password">
+
+      <label>
+        <input type="checkbox" id="showPassword"> Show Password
+      </label>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
